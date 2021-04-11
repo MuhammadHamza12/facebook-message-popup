@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.icon-color {
+  color: #0084ff;
+  cursor: pointer;
+  font-size: 18px;
+}
+.fIcon-color {
+  color: #0084ff;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 0px 4px;
+}
+
+.facebook-popup {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  min-width: 350px;
+  width: 24%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* popup header styling */
+.popup-header {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 5px;
+  background-color: #242526;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid grey;
+}
+.popup-header .avatarPlusName {
+  flex: 0.6;
+  display: flex;
+  align-items: center;
+}
+.popup-header .avatarPlusName img {
+  border-radius: 50%;
+  height: 35px;
+  padding-right: 5px;
+}
+.popup-header .avatarPlusName i {
+  padding-left: 5px;
+  color: grey;
+  font-size: 10px;
+}
+.popup-header .avatarPlusName p {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+.popup-header .header-action {
+  flex: 0.4;
+}
+.popup-header .header-action i {
+  padding: 0px 5px;
+}
+
+/* end of popup header styling */
+
+/* start of popup content styling */
+
+.popup-content {
+  height: 300px;
+  overflow: auto;
+  background-color: #242526;
+}
+
+.popup-content .chat-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+.popup-content .profile-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.popup-content .profile-detail img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.popup-content .profile-detail .profileText {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  margin: 0px;
+}
+.popup-content .profile-detail .mutedText {
+  font-size: 15px;
+  margin: 0;
+  color: #857f6b;
+  padding: 5px 0px;
+}
+.popup-content .chat-content .your-message {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.popup-content .chat-content .your-message .message {
+  border-radius: 30px;
+  background-color: #0084ff;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  margin: 5px;
+}
+
+.popup-content .chat-content .incoming-message {
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+}
+.popup-content .chat-content .incoming-message .messagePlusAvatar {
+  display: flex;
+  align-items: center;
+}
+.popup-content .chat-content .incoming-message .messagePlusAvatar img {
+  border-radius: 50%;
+  height: 35px;
+  padding-right: 5px;
+}
+.popup-content .chat-content .incoming-message .messagePlusAvatar .message {
+  margin: 5px;
+  border-radius: 30px;
+  background-color: #3e4042;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+}
+.popup-content .chat-content .incoming-message .message img {
+  border-radius: 50%;
+  height: 35px;
+  padding-right: 5px;
+}
+
+/* end of popup content styling */
+
+/* footer styling */
+
+.popup-footer {
+  display: flex;
+  flex: 1;
+  padding: 5px 4px;
+  background-color: #242526;
+}
+.popup-footer .footer-actions-left {
+  display: flex;
+  padding: 5px;
+  flex: 0.5;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.popup-footer .footer-action-right {
+  flex: 0.1;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-footer .popup-input {
+  flex: 0.4;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 8px;
+  background-color: #3e4042;
+}
+.popup-footer .popup-input input {
+  outline: none;
+  border: none;
+  max-width: 112px;
+  width: 128px;
+  background-color: #3e4042;
+}
+/* end of footer styling */
